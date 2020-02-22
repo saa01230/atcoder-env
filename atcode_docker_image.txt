@@ -1,0 +1,19 @@
+#VScode local
+    Remote-Container / Remote-SSH
+
+#VScode Remote
+    Python extension
+
+apt install python3
+
+pip(3) install jupyter
+
+apt install git curl
+
+apt install nodejs npm
+
+npm install n -g
+
+n stable
+
+apt purge nodejs npm
