@@ -6,4 +6,5 @@ RUN pip3 install online-judge-tools && npm install -g atcoder-cli
 RUN acc config default-test-dirname-format test && acc config default-task-choice all
 ADD ./templates/ /root/.config/atcoder-cli-nodejs/
 RUN acc config default-template py
+RUN jupyter notebook --generate-config && echo "c.NotebookApp.token = ''" >> /root/.jupyter/jupyter_notebook_config.py && echo "c.NotebookApp.password = ''" >> /root/.jupyter/jupyter_notebook_config.py
 CMD bash
