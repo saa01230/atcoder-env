@@ -25,7 +25,5 @@ fi
 cd /atcoder/py && acc new $CID --template py
 cd /atcoder/cpp && acc new $CID --template cpp
 }
-#alias pyt=''
-#alias ct='g++ main.cpp && oj t'
-alias s='acc submit -y'
+alias s='acc submit'
 export atc='https://atcoder.jp/'
