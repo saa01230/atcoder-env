@@ -28,3 +28,4 @@ cd /atcoder/cpp && acc new $CID --template cpp
 #alias pyt=''
 #alias ct='g++ main.cpp && oj t'
 alias s='acc submit -y'
+export atc='https://atcoder.jp/'
