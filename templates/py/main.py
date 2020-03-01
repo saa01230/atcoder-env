@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+import sys
+input = sys.stdin.buffer.readline
 
-map(int, input().split())
-[int(i) for i in input().split()]
+def inn(func=int):
+    return list(map(func,input().split()))
+
+def ins():
+    return input().split()
+
+a = inn()
