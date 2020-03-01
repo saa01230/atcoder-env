@@ -1,0 +1,30 @@
+chlang() {
+a=`pwd | sed -e "s/cpp/py/g"`
+b=`pwd`
+if [ $a = $b ]; then
+        a=`pwd | sed -e "s/py/cpp/g"`
+fi
+cd $a
+}
+t() {
+a=`pwd | sed -e "s/cpp/py/g"`
+b=`pwd`
+if [ $a = $b ]; then
+        oj t -c "python3 main.py"
+else
+        g++ main.cpp && oj t
+fi
+}
+contest() {
+if [ $# -ne 1 ]; then
+echo "enter contest id."
+read CID
+else
+CID=$1
+fi
+cd /atcoder/py && acc new $CID --template py
+cd /atcoder/cpp && acc new $CID --template cpp
+}
+#alias pyt=''
+#alias ct='g++ main.cpp && oj t'
+alias s='acc submit -y'
